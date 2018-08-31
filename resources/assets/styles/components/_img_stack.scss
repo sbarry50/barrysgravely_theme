@@ -1,0 +1,56 @@
+.stack {
+    @apply relative mx-auto max-w-full -mt-3;
+
+    img {
+        @apply absolute pin-t max-w-full cursor-pointer;
+        left: 0;
+        transition: all 0.4s;
+        outline: 1px solid transparent;
+    
+        &:first-child {
+            transform: rotate(-10deg) translateX(-13%) scale(0.7);
+            z-index: 1;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(10deg) translateX(13%) scale(0.7);
+            z-index: 1;
+        }
+
+        &:last-child {
+            position: relative;
+            transform: scale(0.8);
+            z-index: 2;
+        }
+    }
+}
+
+.stack img.active {
+    transform: scale(0.95);
+    z-index: 5;
+}
+
+@screen lg {
+    .stack {
+        @apply mt-0;
+
+        img {
+            &:first-child {
+                transform: rotate(5deg) translate(-1%, -2%) scale(0.9);
+            }
+
+            &:nth-child(2) {
+                transform: rotate(-8deg) translate(2%, 3%) scale(0.9);
+            }
+
+            &:last-child {
+                transform: scale(0.92);
+            }
+        }
+    }
+
+    .stack img.active {
+        transform: scale(1.05);
+        z-index: 5;
+    }
+}

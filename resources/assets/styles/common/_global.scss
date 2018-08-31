@@ -1,0 +1,82 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    @apply text-sm font-roboto-condensed bg-grey-lightest text-grey-darker leading-normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply font-oswald font-medium text-grey-darkest;
+}
+
+h1, h2, h3, p {
+    @apply mb-3;
+}
+
+h4, h5, h6 {
+    @apply mb-1;
+}
+
+h1 { @apply text-lg }
+h2 { @apply text-base }
+
+a {
+    @apply .no-underline .text-gravely;
+
+    &:hover {
+        @apply .text-grey-darkest;
+    }
+}
+
+img {
+    @apply rounded-lg shadow-md-dark;
+}
+
+@screen md {
+    body {
+        @apply text-base;
+    }
+
+    h1 { @apply text-xl }
+    h2 { @apply text-lg }
+    h3 { @apply text-base }
+}
+
+@screen xl {
+    body {
+        @apply text-lg;
+    }
+
+    h1, h2, h3, p {
+        @apply mb-4;
+    }
+
+    h4, h5, h6 {
+        @apply mb-2;
+    }
+
+    h1 { @apply text-2xl }
+    h2 { @apply text-xl }
+    h3 { @apply text-lg }
+}
+
+@screen xxl {
+    body {
+        @apply text-xl;
+    }
+
+    h1 { @apply text-3xl }
+    h2 { @apply text-2xl }
+    h3 { @apply text-xl }
+}
+
+@screen xxxl {
+    body {
+        @apply text-2xl;
+    }
+
+    h1 { @apply text-4xl }
+    h2 { @apply text-3xl }
+    h3 { @apply text-2xl }
+}

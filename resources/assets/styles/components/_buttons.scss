@@ -1,0 +1,60 @@
+.btn {
+    @apply py-2 px-4 text-xs uppercase font-oswald font-medium rounded;
+}
+
+.btn-gravely {
+    @apply bg-gravely text-gravely-white;
+}
+.btn-gravely:hover {
+    @apply bg-gravely-darker;
+}
+
+.btn-stihl {
+    @apply bg-stihl text-stihl-white;
+}
+.btn-stihl:hover {
+    @apply bg-stihl-darker;
+}
+
+.btn-scag {
+    @apply bg-scag text-scag-white;
+}
+.btn-scag:hover {
+    @apply bg-scag-darker;
+}
+
+.btn-wright {
+    @apply bg-wright text-wright-white;
+}
+.btn-wright:hover {
+    @apply bg-wright-darker;
+}
+
+.btn-honda {
+    @apply bg-honda text-honda-white;
+}
+.btn-honda:hover {
+    @apply bg-honda-darker;
+}
+
+@responsive {
+    .btn-xs {
+        @apply text-xs;
+    }
+
+    .btn-sm {
+        @apply text-sm;
+    }
+
+    .btn-base {
+        @apply py-3 px-6 text-base;
+    }
+
+    .btn-lg {
+        @apply text-lg;
+    }
+
+    .btn-xl {
+        @apply py-4 px-8 text-xl;
+    }
+}

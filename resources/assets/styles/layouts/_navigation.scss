@@ -1,0 +1,46 @@
+.nav {
+    @apply list-reset mx-auto text-center;
+
+    li {
+        @apply my-4;
+        a {
+            @apply text-xl font-oswald font-medium text-grey-darkest;
+
+            &:hover {
+                @apply text-gravely-darker;
+            }
+        }
+    }
+}
+
+@screen md {
+    .nav {
+        @apply w-full flex flex-1 justify-between items-center;
+
+        li {
+            a {
+                @apply text-sm uppercase;
+            }
+        }
+    }
+}
+@screen lg {
+    .nav li a {
+        @apply text-lg;
+    }
+}
+@screen xl {
+    .nav li a {
+        @apply text-xl;
+    }
+}
+@screen xxl {
+    .nav li a {
+        @apply text-xl;
+    }
+}
+@screen xxxl {
+    .nav li a {
+        @apply text-2xl;
+    }
+}

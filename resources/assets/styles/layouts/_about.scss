@@ -1,0 +1,16 @@
+// .about-us-cards {
+//     @include linear-gradient(to top ,#dae1e7 50%, #f8fafc 50%);
+// }
+
+// .about-us-cards .card {
+//     margin-top: -40%;
+// }
+
+.about-us-cards-angled {
+    background-image: 
+    radial-gradient(
+        ellipse at 50% 20%,
+        #c6181f 40%,
+        #a8141a 90%
+    );
+} 

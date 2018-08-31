@@ -1,0 +1,27 @@
+.bg-blur {
+    @apply relative py-4 text-grey-lightest;
+}
+
+@screen lg {
+    .bg-blur {
+        @apply py-10;
+    }
+}
+
+@screen xxl {
+    .bg-blur {
+        @apply py-16;
+    }
+}
+
+.bg-blur::before {
+    content: "";
+    @apply absolute pin-t pin-l block w-full h-full bg-cover bg-center;
+    background-image: url(../images/bg_showroom.jpg);
+    filter: blur(3px);
+}
+
+.bg-blur-overlay {
+    content: "";
+    @apply absolute w-full h-full block pin-t pin-l opacity-50 z-1 bg-grey-darkest;
+}

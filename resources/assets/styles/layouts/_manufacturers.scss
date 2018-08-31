@@ -1,0 +1,40 @@
+.manufacturer {
+    @apply bg-white shadow-defined rounded-lg;
+}
+
+.manufacturer img {
+    @apply shadow-none block rounded-t-lg rounded-b-none;
+}
+
+@screen xl {
+    .manufacturer {
+        @apply flex;
+    }
+    
+    .even.manufacturer {
+        @apply flex-row-reverse;
+    }
+    
+    .manufacturer--img-wrap {
+        @apply flex-1 w-2/3;
+    }
+
+    .odd.manufacturer img {
+        @apply rounded-tl-lg rounded-bl-lg rounded-tr-none;
+    }
+    
+    .even.manufacturer img {
+        @apply rounded-tr-lg rounded-br-lg rounded-tl-none;
+    }
+
+    .manufacturer--description {
+        @apply w-1/3;
+    }
+
+}
+
+@screen xxl {
+    .manufacturer--description {
+        @apply p-12;
+    }
+}

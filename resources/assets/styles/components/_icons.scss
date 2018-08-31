@@ -1,0 +1,77 @@
+.icon {
+    @apply w-4 h-4;
+}
+
+.icon-logo {
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+    -webkit-transform: translateZ(0);
+}
+
+.icon-top-bar {
+    @apply relative fill-white;
+    top: 1px;
+}
+
+.icon-about-us {
+    @apply w-6 h-6 mr-1 p-1 fill-current bg-gravely text-gravely-white rounded-full shadow-icon;
+}
+
+.icon-manufacturers {
+    @apply w-20 h-auto fill-current;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+}
+
+.manufacturers .icon-manufacturers {
+    @apply w-32;
+}
+
+@screen md-lg {
+    .icon-about-us {
+        @apply w-5 h-5;
+    }
+}
+
+@screen lg {
+    .icon-manufacturers {
+        @apply w-32;
+    }
+
+    .manufacturers .icon-manufacturers {
+        @apply w-48;
+    }
+}
+
+@screen xl {
+    .icon-about-us {
+        @apply w-7 h-7;
+    }
+
+    .manufacturers .icon-manufacturers {
+        @apply w-40;
+    }
+}
+
+@screen xxl {
+    .icon-manufacturers {
+        @apply w-48;
+    }
+
+    .manufacturers .icon-manufacturers {
+        @apply w-48;
+    }
+
+    .icon-about-us {
+        @apply w-8 h-8;
+    }
+}
+
+@screen xxxl {
+    .icon-about-us {
+        @apply w-9 h-9;
+    }
+
+    .manufacturers .icon-manufacturers {
+        @apply w-64;
+    }
+}

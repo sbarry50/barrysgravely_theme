@@ -1,0 +1,83 @@
+@responsive {
+    .max-w-1200 {
+        max-width: 1200px;
+    }
+    .max-w-1366 {
+        max-width: 1366px;
+    }
+    .max-w-1440 {
+        max-width: 1440px;
+    }
+
+    .align-25 { vertical-align: 25%; }
+    .align-75 { vertical-align: 75%; }
+
+    .justify-evenly{ justify-content: space-evenly }
+
+    .logo-xxxl {
+        width: 290px;
+        height: 209px;
+    }
+    .logo-xxl {
+        width: 260px;
+        height: 187px;
+    }
+    .logo-xl {
+        width: 230px;
+        height: 165px;
+    }
+    .logo-lg {
+        width: 200px;
+        height: 144px;
+    }
+    .logo-md {
+        width: 170px;
+        height: 122px;
+    }
+    .logo-sm {
+        width: 140px;
+        height: 100px;
+    }
+
+    // slanted edges here
+    .edge-bottom {
+        @include angle(after);
+    }
+
+    .edge-bottom--reverse {
+    @include angle(after, true);
+    }
+
+    .edge-top {
+    @include angle(before);
+    }
+
+    .edge-top-reverse {
+    @include angle(before, true);
+    }
+
+    .edge-both {
+    @include angle(both);
+    }
+
+    .edge-both-reverse {
+    @include angle(both, true);
+    }
+}
+
+.underline-partial {
+    @apply .relative pb-2;
+}
+
+.underline-partial::after {
+    content: '';
+    @apply block absolute pin-b pin-l w-5/6 border-b-2 border-gravely;
+}
+@screen xl {
+    .underline-partial {
+        @apply .pb-4;
+    }
+    .underline-partial::after {
+        @apply border-b-3;
+    }
+}
